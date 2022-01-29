@@ -1,0 +1,352 @@
+
+
+<!doctype html>
+
+<html lang="Python">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Leccion3_Justo_Mota_Marquez module &#8212; Lección 3: Buenas Prácticas en Programación con Python 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/bizstyle.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="leccion3_bppp_Justo_Mota_Marquez" href="modules.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <!--[if lt IE 9]>
+    <script src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="leccion3_bppp_Justo_Mota_Marquez"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Lección 3: Buenas Prácticas en Programación con Python 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" accesskey="U">leccion3_bppp_Justo_Mota_Marquez</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Leccion4_Justo_Mota_Marquez module</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="module-Leccion4_Justo_Mota_Marquez">
+<span id="leccion4-justo-mota-marquez-module"></span><h1>Leccion3_Justo_Mota_Marquez module<a class="headerlink" href="#module-Leccion4_Justo_Mota_Marquez" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Leccion4_Justo_Mota_Marquez.</span></span><span class="sig-name descname"><span class="pre">Calculadora</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Calculadora.</p>
+<p>Esta clase implementa operaciones matemáticas</p>
+<blockquote>
+<div><dl class="simple">
+<dt>num1: int</dt><dd><p>Primer valor con el que vamos a operar.</p>
+</dd>
+<dt>num2: int</dt><dd><p>Segundo valor con el que vamos a operar.</p>
+</dd>
+</dl>
+</div></blockquote>
+<blockquote>
+<div><dl class="simple">
+<dt>getNum1:</dt><dd><p>Devuelve el primer operando (num1).</p>
+</dd>
+<dt>getNum2:</dt><dd><p>Devuelve el segundo operando (num2).</p>
+</dd>
+<dt>setNum1:</dt><dd><p>Asigna un valor al primer operando (num1).</p>
+</dd>
+<dt>setNum2:</dt><dd><p>Asigna un valor al segundo operando (num2).</p>
+</dd>
+<dt>sumar:</dt><dd><p>Realiza la operación de sumar los operandos.</p>
+</dd>
+<dt>multiplicar:</dt><dd><p>Realiza la operación de multiplicar los operandos.</p>
+</dd>
+<dt>restar:</dt><dd><p>Realiza la operación de restar los operandos.</p>
+</dd>
+<dt>dividir:</dt><dd><p>Realiza la operación de dividir los operandos.</p>
+</dd>
+<dt>tablasMultiplicar:</dt><dd><p>Función que dibuja las tablas de multiplicar que hay entre los dos operandos.</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">suma</span> <span class="o">=</span> <span class="n">calculadora</span><span class="o">.</span><span class="n">sumar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado de sumar </span><span class="si">{</span><span class="n">numero1</span><span class="si">}</span><span class="s2"> mas </span><span class="si">{</span><span class="n">numero2</span><span class="si">}</span><span class="s2"> es igual a </span><span class="si">{</span><span class="n">suma</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.dividir">
+<span class="sig-name descname"><span class="pre">dividir</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.dividir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método dividir. División de los dos operandos.
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.
+self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Outputs:</dt><dd><p>resultado: Resultado de la división.</p>
+</dd>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultado</span> <span class="o">=</span> <span class="n">calculadora</span><span class="o">.</span><span class="n">dividir</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado de dividir </span><span class="si">{</span><span class="n">numero1</span><span class="si">}</span><span class="s2"> entre </span><span class="si">{</span><span class="n">numero2</span><span class="si">}</span><span class="s2"> es igual a </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.getNum1">
+<span class="sig-name descname"><span class="pre">getNum1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.getNum1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método getNum1. Devuelve el primer operando.
+Outputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.</p>
+</div></blockquote>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El primer operando es </span><span class="si">{</span><span class="n">calculadora</span><span class="o">.</span><span class="n">getNum1</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.getNum2">
+<span class="sig-name descname"><span class="pre">getNum2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.getNum2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método getNum2. Devuelve el segundo operando.
+Outputs:</p>
+<blockquote>
+<div><p>self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El segundo operando es </span><span class="si">{</span><span class="n">calculadora</span><span class="o">.</span><span class="n">getNum2</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.multiplicar">
+<span class="sig-name descname"><span class="pre">multiplicar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.multiplicar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método multiplicar. Multiplicación de los dos operandos.
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.
+self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Outputs:</dt><dd><p>resultado: Resultado entero de la multiplicación.</p>
+</dd>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultado</span> <span class="o">=</span> <span class="n">calculadora</span><span class="o">.</span><span class="n">multiplicar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado de multiplicar </span><span class="si">{</span><span class="n">numero1</span><span class="si">}</span><span class="s2"> por </span><span class="si">{</span><span class="n">numero2</span><span class="si">}</span><span class="s2"> es igual a </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.num1">
+<span class="sig-name descname"><span class="pre">num1</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.num1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.num2">
+<span class="sig-name descname"><span class="pre">num2</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0</span></em><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.num2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.restar">
+<span class="sig-name descname"><span class="pre">restar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.restar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método restar. Resta de los dos operandos.
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.
+self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Outputs:</dt><dd><p>resultado: Resultado entero de la resta.</p>
+</dd>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultado</span> <span class="o">=</span> <span class="n">calculadora</span><span class="o">.</span><span class="n">restar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado de restar </span><span class="si">{</span><span class="n">numero1</span><span class="si">}</span><span class="s2"> menos </span><span class="si">{</span><span class="n">numero2</span><span class="si">}</span><span class="s2"> es igual a </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.setNum1">
+<span class="sig-name descname"><span class="pre">setNum1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.setNum1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método setNum1. Asigna un valor al primer operando.
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.</p>
+</div></blockquote>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span><span class="o">.</span><span class="n">setNum1</span><span class="p">(</span><span class="n">numero1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.setNum2">
+<span class="sig-name descname"><span class="pre">setNum2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.setNum2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método setNum2. Asigna un valor al segundo operando.
+Inputs:</p>
+<blockquote>
+<div><p>self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span><span class="o">.</span><span class="n">setNum2</span><span class="p">(</span><span class="n">numero2</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.sumar">
+<span class="sig-name descname"><span class="pre">sumar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.sumar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método suma. Suma de los dos operandos.
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.
+self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Outputs:</dt><dd><p>resultado: Resultado entero de la suma.</p>
+</dd>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">resultado</span> <span class="o">=</span> <span class="n">calculadora</span><span class="o">.</span><span class="n">sumar</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;El resultado de sumar </span><span class="si">{</span><span class="n">numero1</span><span class="si">}</span><span class="s2"> mas </span><span class="si">{</span><span class="n">numero2</span><span class="si">}</span><span class="s2"> es igual a </span><span class="si">{</span><span class="n">resultado</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Leccion4_Justo_Mota_Marquez.Calculadora.tablasMultiplicar">
+<span class="sig-name descname"><span class="pre">tablasMultiplicar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Leccion4_Justo_Mota_Marquez.Calculadora.tablasMultiplicar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Método tablasMultiplicar. Dibuja las tablas de multiplicar que hay entre los dos números
+Inputs:</p>
+<blockquote>
+<div><p>self.num1: Primer operando.
+self.num2: Segundo operando.</p>
+</div></blockquote>
+<dl>
+<dt>Outputs:</dt><dd><p>Las tablas de multiplicar que hay entre los dos números</p>
+</dd>
+<dt>Ejemplo:</dt><dd><div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">numero1</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">numero2</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span> <span class="o">=</span> <span class="n">Calculadora</span><span class="p">(</span><span class="n">numero1</span><span class="p">,</span> <span class="n">numero2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">calculadora</span><span class="o">.</span><span class="n">tablasMultiplicar</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="modules.html"
+                          title="previous chapter">leccion3_bppp_Justo_Mota_Marquez</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/Leccion4_Justo_Mota_Marquez.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="modules.html" title="leccion3_bppp_Justo_Mota_Marquez"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Lección 3: Buenas Prácticas en Programación con Python 1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >leccion3_bppp_Justo_Mota_Marquez</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Leccion4_Justo_Mota_Marquez module</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2022, Justo Mota Márquez.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+    </div>
+  </body>
+</html>
